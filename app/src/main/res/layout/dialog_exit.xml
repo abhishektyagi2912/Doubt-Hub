@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/dialogExit"
+    android:padding="20dp"
+    android:layout_margin="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogE"
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:background="@drawable/white_box">
+
+        <TextView
+            android:id="@+id/ExitTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forget_round"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="@string/exit"
+            android:textColor="#1A237E"
+            android:textSize="17sp"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:drawableLeftCompat="@drawable/baseline_logout_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg"
+            android:text="@string/are_you_sure_you_want_to_logout"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/ExitTitle"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/logCancel"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/canceldialog"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/msg"
+            app:layout_constraintBottom_toBottomOf="@id/dialogE"
+            app:layout_constraintEnd_toStartOf="@id/btnLogout"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnLogout"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/dialogE"
+            app:layout_constraintStart_toEndOf="@id/logCancel"
+            tools:ignore="VisualLintButtonSize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

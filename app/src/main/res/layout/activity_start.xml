@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/Startactivityimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:tint="@color/purple"
+        android:src="@drawable/icons8"
+        android:contentDescription="@string/startactivitimage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:id="@+id/see_whats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stuck_in_a_problem_don_t_know_where_to_start"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/see_whats"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/purple"
+            android:onClick="OpenActivity5"
+            android:text="@string/create_an_account"
+            android:textAllCaps="false"
+            android:textColor="#263238"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/loginac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_an_account_already"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/loginac"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:onClick="OpenActivity4"
+            android:text="@string/log_in"
+            android:textColor="#5C6BC0"
+            tools:ignore="UsingOnClickInXml" />
+    </RelativeLayout>
+
+</RelativeLayout>
