@@ -8,9 +8,6 @@ Introducing Doubt Hub, it is a Java-based open-source application that allows us
 
 With Doubt Hub, students can submit their doubts anonymously, eliminating the fear of judgment or embarrassment. The app ensures complete confidentiality by concealing the identities of both the student asking the doubt and the teachers or special faculty members providing the responses. This anonymity encourages students to freely express their uncertainties, fostering a supportive and inclusive learning environment.
 
-The app's user-friendly interface allows students to easily submit their doubts, categorized by subjects or topics. They can attach relevant files or images to provide additional context, helping the faculty members provide more effective and targeted responses. Doubt Hub also offers a search function, enabling students to browse through previously answered doubts to find solutions to questions similar to their own.
-
-
 
 ## Features
 
